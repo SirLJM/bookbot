@@ -11,3 +11,6 @@ def count_characters(book):
         else:
             chars[char] = 1
     return chars
+
+def sort_counted_characters(chars):
+    return sorted(chars.items(), key=lambda x: x[1], reverse=True)
